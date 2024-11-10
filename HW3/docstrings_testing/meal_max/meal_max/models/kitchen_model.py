@@ -122,13 +122,13 @@ def delete_meal(meal_id: int) -> None:
 
 def get_leaderboard(sort_by: str="wins") -> dict[str, Any]:
     """
-    Retrieves the leaderboard of meals sorted by the specified metric, "wins" by default.
+    Retrieves a dictionary of all meals sorted by the specified metric, "wins" by default.
 
     Args:
         sort_by (str): The metric to sort by. Can be 'wins' or 'win_pct'. Defaults to 'wins'.
 
     Returns:
-        list[dict]: A list of dictionaries containing meals sorted by their win count or win percentage.
+        dict[str, Any]: A dictionary containing meals sorted by their win count or win percentage, where each key is the meal name and each value is the sorted metric.
     
     Raises:
         ValueError: If an invalid sort_by parameter is provided.

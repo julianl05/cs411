@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the base URL for the Flask API
-BASE_URL="http://localhost:5000/api"
+BASE_URL="http://localhost:5001/api"
 
 # Flag to control whether to echo JSON output
 ECHO_JSON=false
@@ -442,7 +442,6 @@ swap_songs_in_playlist() {
     exit 1
   fi
 }
-
 ######################################################
 #
 # Leaderboard
